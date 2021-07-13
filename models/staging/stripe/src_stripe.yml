@@ -8,7 +8,7 @@ sources:
       - name: payment
         description: Raw payment information
         columns:
-          - name: paymentid
+          - name: id
             description: Primary key for transactions
             tests:
               - unique
