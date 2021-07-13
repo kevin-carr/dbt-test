@@ -1,0 +1,15 @@
+version: 2
+
+sources:
+  - name: stripe
+    description: A clone of a Postgres application database
+    database: dbt_test
+    tables:
+      - name: payment
+        description: Raw payment information
+        columns:
+          - name: paymentid
+            description: Primary key for transactions
+            tests:
+              - unique
+              - not_null

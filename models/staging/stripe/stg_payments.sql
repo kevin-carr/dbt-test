@@ -6,4 +6,4 @@ select
     amount / 100 as amount,
     created as created_at
 
-from dbt_test.stripe.payment
+from {{ source('stripe', 'payment') }}
